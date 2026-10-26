@@ -52,7 +52,7 @@ const FAQ = () => {
         
         {/* Section Title */}
         <div className="text-center max-w-[800px] mx-auto mb-12 sm:mb-14" data-aos="fade-up">
-          <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
+          <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
             FAQ
           </span>
           <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight">

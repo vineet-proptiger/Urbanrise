@@ -62,7 +62,7 @@ const ContactCTA = ({ setIsOpen }) => {
 
         {/* SECTION 8: Headline & Subheadline */}
         <div className="text-center mb-8 sm:mb-10" data-aos="fade-up">
-          <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2 block">
+          <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2 block">
             LIMITED TIME LAUNCH OPPORTUNITY
           </span>
           <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight">
@@ -77,21 +77,21 @@ const ContactCTA = ({ setIsOpen }) => {
             <button
               type="button"
               onClick={() => setIsOpen && setIsOpen(true)}
-              className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] bg-[#2A7A2A] text-white hover:bg-[#1E5C1E] transition-all shadow-md hover:shadow-lg cursor-pointer"
+              className="px-6 sm:px-8 py-3 rounded-full font-extrabold text-[14px] bg-[#98ECA1] text-[#003829] border-2 border-[#98ECA1] hover:bg-[#004935] hover:text-white hover:border-[#004935] transition-all shadow-md hover:shadow-lg cursor-pointer"
             >
               Enquire Now
             </button>
             <button
               type="button"
               onClick={() => setIsOpen && setIsOpen(true)}
-              className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] bg-white text-[#111] border border-gray-300 hover:border-[#2A7A2A] hover:text-[#2A7A2A] transition-all shadow-sm cursor-pointer"
+              className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] bg-white text-[#111] border border-gray-300 hover:border-[#004935] hover:text-[#004935] transition-all shadow-sm cursor-pointer"
             >
               Download Brochure
             </button>
             <button
               type="button"
               onClick={() => setIsOpen && setIsOpen(true)}
-              className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] bg-white text-[#111] border border-gray-300 hover:border-[#2A7A2A] hover:text-[#2A7A2A] transition-all shadow-sm cursor-pointer"
+              className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] bg-white text-[#111] border border-gray-300 hover:border-[#004935] hover:text-[#004935] transition-all shadow-sm cursor-pointer"
             >
               Schedule Site Visit
             </button>
@@ -99,11 +99,11 @@ const ContactCTA = ({ setIsOpen }) => {
 
           {/* Contact Details */}
           <div className="mt-4 inline-flex items-center gap-2 text-xs sm:text-sm text-[#6c757d] font-semibold bg-white px-4 py-2 rounded-full border border-gray-200 shadow-xs">
-            <i className="fa-solid fa-location-dot text-[#2A7A2A]"></i>
+            <i className="fa-solid fa-location-dot text-[#004935]"></i>
             <span>Gattahalli, Off Sarjapur Road, Bangalore</span>
             <span className="text-gray-300">|</span>
-            <a href={`tel:${PHONE_NUMBER}`} className="text-[#111111] hover:text-[#2A7A2A] flex items-center gap-1 font-bold">
-              <i className="fa-solid fa-phone text-[#2A7A2A]"></i>
+            <a href={`tel:${PHONE_NUMBER}`} className="text-[#111111] hover:text-[#004935] flex items-center gap-1 font-bold">
+              <i className="fa-solid fa-phone text-[#004935]"></i>
               {PHONE_DISPLAY}
             </a>
           </div>
@@ -113,10 +113,10 @@ const ContactCTA = ({ setIsOpen }) => {
         {success ? (
           <div style={{ padding: '32px 0', textAlign: 'center' }} data-aos="fade-up">
             <div style={{
-              width: '56px', height: '56px', borderRadius: '50%', background: '#EAF5EA',
+              width: '56px', height: '56px', borderRadius: '50%', background: '#98ECA1',
               display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px'
             }}>
-              <svg width="28" height="28" fill="none" stroke="#2A7A2A" strokeWidth="2.5" viewBox="0 0 24 24">
+              <svg width="28" height="28" fill="none" stroke="#003829" strokeWidth="3" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
@@ -124,7 +124,7 @@ const ContactCTA = ({ setIsOpen }) => {
             <p style={{ color: '#666', fontSize: '14px', marginTop: '6px', fontFamily: F_SANS }}>Our team will contact you shortly.</p>
           </div>
         ) : (
-          <div className="bg-white rounded-[20px] shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-[#EAF5EA] overflow-hidden max-w-[540px] mx-auto text-left" data-aos="fade-up">
+          <div className="bg-white rounded-[20px] shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-[#EAF7EE] overflow-hidden max-w-[540px] mx-auto text-left" data-aos="fade-up">
             <div className="bg-[#1a1a1a] p-5 text-white">
               <h3 className="font-extrabold text-[18px] sm:text-[20px] text-white m-0">
                 Register for Priority Booking
@@ -138,7 +138,7 @@ const ContactCTA = ({ setIsOpen }) => {
               <form onSubmit={submit} className="flex flex-col gap-4">
                 <div>
                   <label className="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">
-                    Full Name <span className="text-[#2A7A2A]">*</span>
+                    Full Name <span className="text-[#004935]">*</span>
                   </label>
                   <input name="fullname" required value={form.fullname} onChange={handle} placeholder="Enter your full name"
                     className="form-input w-full" style={{ fontFamily: F_SANS }} />
@@ -154,7 +154,7 @@ const ContactCTA = ({ setIsOpen }) => {
 
                 <div>
                   <label className="block text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-1">
-                    Mobile Number <span className="text-[#2A7A2A]">*</span>
+                    Mobile Number <span className="text-[#004935]">*</span>
                   </label>
                   <input name="phone" required value={form.phone} onChange={handle}
                     placeholder="10-digit mobile number" maxLength={10}
@@ -164,14 +164,14 @@ const ContactCTA = ({ setIsOpen }) => {
                 {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
                 <label className="flex items-start gap-2 cursor-pointer text-left">
-                  <input type="checkbox" required defaultChecked style={{ accentColor: '#2A7A2A', marginTop: '2px', flexShrink: 0 }} />
+                  <input type="checkbox" required defaultChecked style={{ accentColor: '#004935', marginTop: '2px', flexShrink: 0 }} />
                   <span className="text-[12px] text-gray-500 leading-normal">
                     I agree to receive updates as per the <Link href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</Link>.
                   </span>
                 </label>
 
                 <button type="submit" disabled={loading}
-                  className="w-full py-3.5 rounded-full font-bold text-sm bg-[#2A7A2A] text-white hover:bg-[#1E5C1E] transition-colors shadow-md cursor-pointer flex items-center justify-center gap-2">
+                  className="w-full py-3.5 rounded-full font-extrabold text-sm bg-[#98ECA1] text-[#003829] border-2 border-[#98ECA1] hover:bg-[#004935] hover:text-white hover:border-[#004935] transition-colors shadow-md cursor-pointer flex items-center justify-center gap-2">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
                   </svg>

@@ -6,7 +6,7 @@ export default function manifest() {
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#2A7A2A',
+    theme_color: '#004935',
     icons: [
       {
         src: '/favicon/favicon.png',

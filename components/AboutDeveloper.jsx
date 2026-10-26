@@ -107,7 +107,7 @@ const ContactForm = () => {
       {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-        <input type="checkbox" required defaultChecked style={{ accentColor: '#2A7A2A', marginTop: '2px', flexShrink: 0 }} />
+        <input type="checkbox" required defaultChecked style={{ accentColor: '#004935', marginTop: '2px', flexShrink: 0 }} />
         <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
           I agree to receive updates as per the <Link href="/privacy-policy" prefetch={false} style={{ color: '#2563eb', textDecoration: 'underline' }}>Privacy Policy</Link>.
         </span>
@@ -131,7 +131,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
 
       {/* Heading */}
       <div className="text-center mb-10" data-aos="fade-up">
-        <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
+        <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
           DEVELOPER PROFILE
         </span>
         <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight">

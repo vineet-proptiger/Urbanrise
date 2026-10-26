@@ -114,7 +114,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
 
   if (success) return (
     <div className="text-center py-6">
-      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#2A7A2A]/20 border-2 border-[#4DADE2]">
+      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#004935]/20 border-2 border-[#4DADE2]">
         <svg className="w-8 h-8 text-[#4DADE2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
         </svg>
@@ -171,7 +171,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
           required
           defaultChecked
           className="mt-1 shrink-0 cursor-pointer"
-          style={{ accentColor: '#2A7A2A', width: '16px', height: '16px' }}
+          style={{ accentColor: '#98ECA1', width: '16px', height: '16px' }}
         />
         <label
           htmlFor="consentCheck"

@@ -107,7 +107,7 @@ const Hero = ({ setIsOpen }) => {
               </div>
 
               {/* ── LUXURY GALLERY CENTERPIECE (With refined bezel framing) ── */}
-              <div className="p-[2px] rounded-2xl sm:rounded-3xl bg-gradient-to-tr from-[#34D399] via-[#4DADE2] to-[#2A7A2A] shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
+              <div className="p-[3.5px] sm:p-1 rounded-2xl sm:rounded-3xl bg-gradient-to-tr from-[#2A7AAD] via-[#4DADE2] to-[#3A96CC] shadow-[0_20px_50px_rgba(0,0,0,0.45),0_0_20px_rgba(77,173,226,0.35)]">
                 <div className="relative rounded-[14px] sm:rounded-[22px] overflow-hidden bg-black">
                   <div 
                     onTransitionEnd={handleTransitionEnd}
@@ -149,8 +149,8 @@ const Hero = ({ setIsOpen }) => {
                       }}
                       className={`py-2 px-3 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-300 cursor-pointer text-center flex items-center justify-center gap-1.5 border whitespace-nowrap ${
                         isActive
-                          ? 'bg-[#98ECA1] text-[#003829] border-[#98ECA1] shadow-[0_4px_16px_rgba(152,236,161,0.35)] font-extrabold -translate-y-0.5'
-                          : 'bg-black/30 text-white/80 border-white/15 hover:border-white/40 hover:text-white hover:bg-black/50 backdrop-blur-sm'
+                          ? 'bg-[#3A96CC] text-white border-[#4DADE2] shadow-[0_4px_16px_rgba(58,150,204,0.45)] font-extrabold -translate-y-0.5'
+                          : 'bg-[#3A96CC]/15 text-white/85 border-[#3A96CC]/35 hover:border-[#4DADE2] hover:text-white hover:bg-[#3A96CC]/30 backdrop-blur-sm'
                       }`}
                     >
                       <span>{slide.name}</span>
@@ -261,7 +261,7 @@ const Hero = ({ setIsOpen }) => {
       </div>
 
       {/* Sleek bottom gold accent divider */}
-      <div className="relative z-10 h-[2px] w-full bg-gradient-to-r from-transparent via-[#2A7A2A] to-transparent opacity-70" />
+      <div className="relative z-10 h-[2px] w-full bg-gradient-to-r from-transparent via-[#004935] to-transparent opacity-70" />
     </section>
   )
 }

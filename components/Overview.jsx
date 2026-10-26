@@ -14,7 +14,7 @@ const overviewSpecs = [
   },
   {
     title: 'Tower Structure',
-    desc: '3 Towers (2B + G + 9/11 Floors)',
+    desc: '3 Towers with 368 Homes',
   },
   {
     title: 'Luxury Clubhouse',
@@ -49,7 +49,7 @@ const Overview = ({ setIsOpen }) => {
           {/* Content Column */}
           <div className="w-full lg:w-1/2 lg:px-[16px] lg:pl-12">
             <div>
-              <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2 block">
+              <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2 block">
                 WELLNESS ARCHITECTURE
               </span>
               <h2 className="text-[#111111] text-[24px] sm:text-[28px] md:text-[32px] font-black leading-[1.15] mb-4 tracking-tight">
@@ -74,7 +74,7 @@ const Overview = ({ setIsOpen }) => {
                 <button
                   type="button"
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="text-[#2A7A2A] font-bold text-[14.5px] mt-2.5 inline-flex items-center gap-1.5 hover:underline cursor-pointer transition-colors duration-200 focus:outline-none"
+                  className="text-[#004935] font-bold text-[14.5px] mt-2.5 inline-flex items-center gap-1.5 hover:underline cursor-pointer transition-colors duration-200 focus:outline-none"
                 >
                   <span>{isExpanded ? 'Read Less' : 'Read More'}</span>
                   <svg 
@@ -92,7 +92,7 @@ const Overview = ({ setIsOpen }) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 pt-6 border-t border-gray-100">
                 {overviewSpecs.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#2A7A2A] text-white flex items-center justify-center text-[11px] flex-shrink-0 mt-0.5 shadow-xs">
+                    <div className="w-6 h-6 rounded-full bg-[#98ECA1] text-[#003829] flex items-center justify-center text-[11px] flex-shrink-0 mt-0.5 shadow-sm font-bold">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>

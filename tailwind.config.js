@@ -21,15 +21,15 @@ module.exports = {
           bg: '#EBF2F1',
         },
         terracotta: {
-          DEFAULT: '#2A7A2A',
-          light: '#3D9E3D',
-          dark: '#1E5C1E',
-          bg: '#EAF5EA',
+          DEFAULT: '#004935',
+          light: '#005C43',
+          dark: '#003627',
+          bg: '#EAF7EE',
         },
         primary: {
-          DEFAULT: '#2A7A2A',
-          light: '#3D9E3D',
-          dark: '#1E5C1E',
+          DEFAULT: '#004935',
+          light: '#005C43',
+          dark: '#003627',
         },
         dark: {
           DEFAULT: 'var(--color-dark)',

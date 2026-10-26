@@ -11,7 +11,7 @@ const MasterPlan = ({ setIsOpen }) => {
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10" data-aos="fade-up">
-          <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
+          <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
             MASTER PLAN &amp; FLOOR PLANS
           </span>
           <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight">
@@ -30,7 +30,7 @@ const MasterPlan = ({ setIsOpen }) => {
               onClick={() => setActiveTab('master')}
               className={`flex items-center gap-2 px-6 sm:px-8 py-2.5 rounded-full text-[13.5px] sm:text-[14.5px] font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === 'master'
-                  ? 'bg-[#2A7A2A] text-white shadow-[0_6px_20px_rgba(175, 117, 28,0.35)]'
+                  ? 'bg-[#98ECA1] text-[#003829] font-extrabold shadow-md'
                   : 'text-[#495057] hover:text-[#111111]'
               }`}
             >
@@ -42,7 +42,7 @@ const MasterPlan = ({ setIsOpen }) => {
               onClick={() => setActiveTab('floor')}
               className={`flex items-center gap-2 px-6 sm:px-8 py-2.5 rounded-full text-[13.5px] sm:text-[14.5px] font-bold transition-all duration-300 cursor-pointer ${
                 activeTab === 'floor'
-                  ? 'bg-[#2A7A2A] text-white shadow-[0_6px_20px_rgba(175, 117, 28,0.35)]'
+                  ? 'bg-[#98ECA1] text-[#003829] font-extrabold shadow-md'
                   : 'text-[#495057] hover:text-[#111111]'
               }`}
             >
@@ -68,11 +68,11 @@ const MasterPlan = ({ setIsOpen }) => {
                   sizes="(max-width: 1024px) 100vw, 900px"
                 />
                 <div className="absolute inset-0 bg-black/25 flex flex-col items-center justify-center gap-2.5 transition-colors group-hover:bg-black/35">
-                  <div className="w-12 h-12 rounded-full bg-white text-[#2A7A2A] flex items-center justify-center text-lg shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-white text-[#004935] flex items-center justify-center text-lg shadow-lg">
                     <i className="fa-solid fa-lock" />
                   </div>
-                  <span className="bg-white text-[#111111] px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 group-hover:bg-[#2A7A2A] group-hover:text-white transition-colors">
-                    <i className="fa-solid fa-file-arrow-down text-[#2A7A2A] group-hover:text-white" />
+                  <span className="bg-white text-[#111111] px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 group-hover:bg-[#004935] group-hover:text-white transition-colors">
+                    <i className="fa-solid fa-file-arrow-down text-[#004935] group-hover:text-white" />
                     Click to Unlock High-Res Master Plan
                   </span>
                 </div>
@@ -91,7 +91,7 @@ const MasterPlan = ({ setIsOpen }) => {
             ].map((plan, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-[22px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] overflow-hidden border border-[#f3f4f6] cursor-pointer hover:shadow-[0_16px_40px_rgba(42, 122, 42,0.12)] hover:border-[#2A7A2A]/30 transition-all duration-300 group flex flex-col justify-between"
+                className="bg-white rounded-[22px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] overflow-hidden border border-[#f3f4f6] cursor-pointer hover:shadow-[0_16px_40px_rgba(0, 73, 53,0.12)] hover:border-[#004935]/30 transition-all duration-300 group flex flex-col justify-between"
                 onClick={() => setIsOpen && setIsOpen(true)}
               >
                 <div className="relative w-full aspect-[4/3] bg-gray-50 p-6 flex items-center justify-center border-b border-[#f3f4f6] overflow-hidden">
@@ -103,11 +103,11 @@ const MasterPlan = ({ setIsOpen }) => {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-black/20 flex flex-col items-center justify-center gap-2 transition-colors group-hover:bg-black/30">
-                    <div className="w-10 h-10 rounded-full bg-white text-[#2A7A2A] flex items-center justify-center text-sm shadow-md">
+                    <div className="w-10 h-10 rounded-full bg-white text-[#004935] flex items-center justify-center text-sm shadow-md">
                       <i className="fa-solid fa-lock" />
                     </div>
-                    <span className="bg-white text-[#111111] px-4 py-2 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5 group-hover:bg-[#2A7A2A] group-hover:text-white transition-colors">
-                      <i className="fa-solid fa-eye text-[#2A7A2A] group-hover:text-white" />
+                    <span className="bg-white text-[#111111] px-4 py-2 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5 group-hover:bg-[#004935] group-hover:text-white transition-colors">
+                      <i className="fa-solid fa-eye text-[#004935] group-hover:text-white" />
                       Unlock Floor Plan
                     </span>
                   </div>

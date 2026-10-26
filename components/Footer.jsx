@@ -31,21 +31,21 @@ const Footer = ({ setIsOpen }) => (
         <button
           type="button"
           onClick={() => setIsOpen && setIsOpen(true)}
-          className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] sm:text-[15px] transition-all duration-300 shadow-[0_4px_16px_rgba(175,117,28,0.4)] hover:-translate-y-0.5 cursor-pointer"
+          className="px-6 sm:px-8 py-3 rounded-full font-extrabold text-[14px] sm:text-[15px] transition-all duration-300 shadow-md hover:-translate-y-0.5 cursor-pointer"
           style={{
-            background: '#2A7A2A',
-            color: '#ffffff',
-            border: '2px solid #2A7A2A',
+            background: '#98ECA1',
+            color: '#003829',
+            border: '2px solid #98ECA1',
           }}
           onMouseEnter={e => {
             e.currentTarget.style.background = '#ffffff';
             e.currentTarget.style.borderColor = '#ffffff';
-            e.currentTarget.style.color = '#2A7A2A';
+            e.currentTarget.style.color = '#003829';
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#2A7A2A';
-            e.currentTarget.style.borderColor = '#2A7A2A';
-            e.currentTarget.style.color = '#ffffff';
+            e.currentTarget.style.background = '#98ECA1';
+            e.currentTarget.style.borderColor = '#98ECA1';
+            e.currentTarget.style.color = '#003829';
           }}
         >
           Enquire Now
@@ -54,21 +54,21 @@ const Footer = ({ setIsOpen }) => (
         <button
           type="button"
           onClick={() => setIsOpen && setIsOpen(true)}
-          className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] sm:text-[15px] transition-all duration-300 shadow-[0_4px_16px_rgba(175,117,28,0.4)] hover:-translate-y-0.5 cursor-pointer"
+          className="px-6 sm:px-8 py-3 rounded-full font-extrabold text-[14px] sm:text-[15px] transition-all duration-300 shadow-md hover:-translate-y-0.5 cursor-pointer"
           style={{
-            background: '#2A7A2A',
-            color: '#ffffff',
-            border: '2px solid #2A7A2A',
+            background: '#98ECA1',
+            color: '#003829',
+            border: '2px solid #98ECA1',
           }}
           onMouseEnter={e => {
             e.currentTarget.style.background = '#ffffff';
             e.currentTarget.style.borderColor = '#ffffff';
-            e.currentTarget.style.color = '#2A7A2A';
+            e.currentTarget.style.color = '#003829';
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#2A7A2A';
-            e.currentTarget.style.borderColor = '#2A7A2A';
-            e.currentTarget.style.color = '#ffffff';
+            e.currentTarget.style.background = '#98ECA1';
+            e.currentTarget.style.borderColor = '#98ECA1';
+            e.currentTarget.style.color = '#003829';
           }}
         >
           Download Brochure
@@ -77,21 +77,21 @@ const Footer = ({ setIsOpen }) => (
         <button
           type="button"
           onClick={() => setIsOpen && setIsOpen(true)}
-          className="px-6 sm:px-8 py-3 rounded-full font-bold text-[14px] sm:text-[15px] transition-all duration-300 shadow-[0_4px_16px_rgba(175,117,28,0.4)] hover:-translate-y-0.5 cursor-pointer"
+          className="px-6 sm:px-8 py-3 rounded-full font-extrabold text-[14px] sm:text-[15px] transition-all duration-300 shadow-md hover:-translate-y-0.5 cursor-pointer"
           style={{
-            background: '#2A7A2A',
-            color: '#ffffff',
-            border: '2px solid #2A7A2A',
+            background: '#98ECA1',
+            color: '#003829',
+            border: '2px solid #98ECA1',
           }}
           onMouseEnter={e => {
             e.currentTarget.style.background = '#ffffff';
             e.currentTarget.style.borderColor = '#ffffff';
-            e.currentTarget.style.color = '#2A7A2A';
+            e.currentTarget.style.color = '#003829';
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#2A7A2A';
-            e.currentTarget.style.borderColor = '#2A7A2A';
-            e.currentTarget.style.color = '#ffffff';
+            e.currentTarget.style.background = '#98ECA1';
+            e.currentTarget.style.borderColor = '#98ECA1';
+            e.currentTarget.style.color = '#003829';
           }}
         >
           Schedule Site Visit
@@ -104,15 +104,15 @@ const Footer = ({ setIsOpen }) => (
         className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/[0.06] border border-white/15 px-6 py-3 rounded-full mb-10 text-[14px] sm:text-[15px]"
       >
         <span className="flex items-center gap-1.5 text-neutral-300">
-          <i className="fa-solid fa-location-dot text-[#2A7A2A]"></i>
+          <i className="fa-solid fa-location-dot text-[#004935]"></i>
           Gattahalli, Bengaluru
         </span>
         <span className="text-white/20 hidden sm:inline">|</span>
         <a 
           href={`tel:${PHONE_NUMBER}`} 
-          className="flex items-center gap-1.5 text-white hover:text-[#2A7A2A] font-bold transition-colors duration-200"
+          className="flex items-center gap-1.5 text-white hover:text-[#004935] font-bold transition-colors duration-200"
         >
-          <i className="fa-solid fa-phone text-[#2A7A2A]"></i>
+          <i className="fa-solid fa-phone text-[#004935]"></i>
           {PHONE_DISPLAY}
         </a>
       </div>
@@ -138,7 +138,7 @@ const Footer = ({ setIsOpen }) => (
         <Link
           href="/privacy-policy"
           prefetch={false}
-          className="text-[#2A7A2A] hover:underline font-medium transition-colors duration-200"
+          className="text-[#004935] hover:underline font-medium transition-colors duration-200"
         >
           Privacy Policy
         </Link>
@@ -146,7 +146,7 @@ const Footer = ({ setIsOpen }) => (
 
       {/* ── 2nd SS Content: Detailed Legal Disclaimer ── */}
       <p className="w-full text-left text-neutral-500 text-[12px] leading-[1.75] m-0">
-        <strong className="text-[#2A7A2A]">Disclaimer:</strong> This is not the official website of the developer. The information depicted herein, including master plans, floor plans, furniture layout, fittings, illustrations, specifications, designs, dimensions, rendered views, colours, amenities and facilities etc., are subject to change without notification as may be required by the relevant authorities or the Developer&apos;s architect. This advertisement is an invitation to offer and shall not be construed as an offer or contract. * Prices subject to change without notice. All taxes extra as applicable.
+        <strong className="text-[#004935]">Disclaimer:</strong> This is not the official website of the developer. The information depicted herein, including master plans, floor plans, furniture layout, fittings, illustrations, specifications, designs, dimensions, rendered views, colours, amenities and facilities etc., are subject to change without notification as may be required by the relevant authorities or the Developer&apos;s architect. This advertisement is an invitation to offer and shall not be construed as an offer or contract. * Prices subject to change without notice. All taxes extra as applicable.
       </p>
 
     </div>

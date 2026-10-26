@@ -83,12 +83,12 @@ const Navbar = ({ setIsOpen, onPrefetchModal }) => {
                 className="text-[13px] xl:text-[14.5px]"
                 style={{
                   fontWeight: link.active ? '700' : '600',
-                  color: link.active ? '#2A7A2A' : '#2d3748',
+                  color: link.active ? '#004935' : '#2d3748',
                   transition: 'color 0.2s',
                   whiteSpace: 'nowrap'
                 }}
                 onMouseEnter={e => {
-                  if (!link.active) e.target.style.color = '#2A7A2A'
+                  if (!link.active) e.target.style.color = '#004935'
                   prefetchSection(link.href)
                 }}
                 onMouseLeave={e => {
@@ -106,22 +106,23 @@ const Navbar = ({ setIsOpen, onPrefetchModal }) => {
               onClick={() => setIsOpen(true)}
               onMouseEnter={() => onPrefetchModal?.()}
               onTouchStart={() => onPrefetchModal?.()}
-              className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] font-semibold text-[15px] transition-all duration-300 whitespace-nowrap"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] font-extrabold text-[15px] transition-all duration-300 whitespace-nowrap shadow-md cursor-pointer"
               style={{
-                background: '#2A7A2A',
-                color: '#ffffff',
-                border: '2px solid #2A7A2A',
-                boxShadow: '0 4px 14px 0 rgba(175, 117, 28, 0.39)',
+                background: '#98ECA1',
+                color: '#003829',
+                border: '2px solid #98ECA1',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#ffffff';
-                e.currentTarget.style.color = '#2A7A2A';
+                e.currentTarget.style.background = '#004935';
+                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.borderColor = '#004935';
                 e.currentTarget.style.transform = 'translateY(-1px)';
                 onPrefetchModal?.();
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = '#2A7A2A';
-                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.background = '#98ECA1';
+                e.currentTarget.style.color = '#003829';
+                e.currentTarget.style.borderColor = '#98ECA1';
                 e.currentTarget.style.transform = 'none';
               }}
             >
@@ -160,7 +161,7 @@ const Navbar = ({ setIsOpen, onPrefetchModal }) => {
                 padding: '14px 24px',
                 fontSize: '15px',
                 fontWeight: link.active ? '700' : '600',
-                color: link.active ? '#2A7A2A' : '#2d3748',
+                color: link.active ? '#004935' : '#2d3748',
                 borderBottom: '1px solid rgba(0,0,0,0.05)',
                 transition: 'color 0.2s, background 0.2s',
               }}
@@ -177,16 +178,18 @@ const Navbar = ({ setIsOpen, onPrefetchModal }) => {
             <button
               onClick={() => { setIsOpen(true); setMobileOpen(false) }}
               onTouchStart={() => onPrefetchModal?.()}
-              className="w-full py-3.5 px-4 rounded-[50px] font-semibold text-[15px] transition-all duration-300"
-              style={{ background: '#2A7A2A', color: '#ffffff', border: '2px solid #2A7A2A', boxShadow: '0 4px 14px 0 rgba(175, 117, 28, 0.39)' }}
+              className="w-full py-3.5 px-4 rounded-[50px] font-extrabold text-[15px] transition-all duration-300 shadow-md cursor-pointer"
+              style={{ background: '#98ECA1', color: '#003829', border: '2px solid #98ECA1' }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#ffffff';
-                e.currentTarget.style.color = '#2A7A2A';
+                e.currentTarget.style.background = '#004935';
+                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.borderColor = '#004935';
                 onPrefetchModal?.();
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = '#2A7A2A';
-                e.currentTarget.style.color = '#ffffff';
+                e.currentTarget.style.background = '#98ECA1';
+                e.currentTarget.style.color = '#003829';
+                e.currentTarget.style.borderColor = '#98ECA1';
               }}
             >
               Book Site Visit

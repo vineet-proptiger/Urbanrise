@@ -97,15 +97,15 @@ export default function Home() {
           onMouseEnter={prefetchModal}
           onTouchStart={prefetchModal}
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
-          style={{ background: '#2A7A2A', borderRight: '1px solid #1E5C1E' }}
+          style={{ background: '#98ECA1', borderRight: '1px solid rgba(0,0,0,0.1)' }}
         >
           <div className="enquire-icon-wrap flex items-center justify-center">
-            <svg width="22" height="22" fill="none" stroke="#ffffff" strokeWidth="2" viewBox="0 0 24 24">
+            <svg width="22" height="22" fill="none" stroke="#003829" strokeWidth="2.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round"
                 d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
           </div>
-          <span className="text-[11px] sm:text-[12px] font-bold text-white mt-1 leading-none">ENQUIRE</span>
+          <span className="text-[11px] sm:text-[12px] font-extrabold text-[#003829] mt-1 leading-none">ENQUIRE</span>
         </button>
         <a
           href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(PROJECT_NAME)}%20Price%20and%20Floor%20Plans`}

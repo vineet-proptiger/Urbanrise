@@ -34,7 +34,7 @@ const PaymentPlan = ({ setIsOpen }) => {
       <div className="container mx-auto px-4 sm:px-6" style={{ maxWidth: '1150px' }}>
         {/* Section Title */}
         <div className="text-center max-w-[800px] mx-auto mb-12 sm:mb-14" data-aos="fade-up">
-          <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
+          <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
             PAYMENT PLAN
           </span>
           <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight">
@@ -47,7 +47,7 @@ const PaymentPlan = ({ setIsOpen }) => {
           className="bg-white rounded-[24px] sm:rounded-[28px] p-2 sm:p-3"
           style={{
             boxShadow: '0 20px 50px rgba(175, 117, 28, 0.08)',
-            border: '1px solid rgba(42, 122, 42, 0.12)',
+            border: '1px solid rgba(0, 73, 53, 0.12)',
           }}
           data-aos="fade-up"
           onMouseLeave={() => setActiveIdx(null)}
@@ -66,7 +66,7 @@ const PaymentPlan = ({ setIsOpen }) => {
                     isActive ? 'scale-[1.01] sm:scale-100 z-10' : ''
                   }`}
                   style={{
-                    background: isActive ? '#1E5C1E' : 'transparent',
+                    background: isActive ? '#003627' : 'transparent',
                     boxShadow: isActive ? '0 12px 30px rgba(21, 53, 105, 0.35)' : 'none',
                   }}
                 >

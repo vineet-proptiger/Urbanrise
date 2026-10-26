@@ -9,15 +9,15 @@
    ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Urbanrise The Living Wave — Logo Green + Water Blue Palette ── */
-  --color-gold: #2A7A2A;
-  --color-gold-light: #3D9E3D;
-  --color-gold-dark: #1E5C1E;
-  --color-gold-bg: #EAF5EA;
+  --color-gold: #004935;
+  --color-gold-light: #005C43;
+  --color-gold-dark: #003627;
+  --color-gold-bg: #EAF7EE;
 
   /* ── Primary (Forest Green from logo "U") ── */
-  --color-primary: #2A7A2A;
-  --color-primary-light: #3D9E3D;
-  --color-primary-dark: #1E5C1E;
+  --color-primary: #004935;
+  --color-primary-light: #005C43;
+  --color-primary-dark: #003627;
   /* ── Accent (Water Blue from logo "U" bubbles) ── */
   --color-teal: #3A96CC;
   --color-teal-light: #4DADE2;
@@ -110,11 +110,11 @@
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(42, 122, 42, 0.45);
+    box-shadow: 0 0 0 0 rgba(0, 73, 53, 0.45);
   }
 
   50% {
-    box-shadow: 0 0 0 12px rgba(42, 122, 42, 0);
+    box-shadow: 0 0 0 12px rgba(0, 73, 53, 0);
   }
 }
 
@@ -144,11 +144,11 @@
 
   0%,
   100% {
-    border-color: rgba(42, 122, 42, 0.4);
+    border-color: rgba(0, 73, 53, 0.4);
   }
 
   50% {
-    border-color: rgba(42, 122, 42, 1);
+    border-color: rgba(0, 73, 53, 1);
   }
 }
 
@@ -230,7 +230,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #2A7A2A, #3A96CC);
+    background: linear-gradient(180deg, #004935, #3A96CC);
     border-radius: 4px;
   }
 
@@ -239,7 +239,7 @@
   }
 
   ::selection {
-    background: rgba(42, 122, 42, 0.18);
+    background: rgba(0, 73, 53, 0.18);
     color: #3A96CC;
   }
 }
@@ -251,13 +251,13 @@
   .btn-gold {
     position: relative;
     overflow: hidden;
-    background: var(--color-gold);
-    color: #fff;
-    border: 2px solid var(--color-gold);
+    background: #98ECA1;
+    color: #003829;
+    border: 2px solid #98ECA1;
     border-radius: var(--btn-radius);
     padding: 12px 32px;
     font-family: var(--font-jost), 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 13px;
     letter-spacing: 0.08em;
     cursor: pointer;
@@ -287,11 +287,11 @@
   }
 
   .btn-gold:hover {
-    background: #fff !important;
-    color: var(--color-gold) !important;
-    border-color: var(--color-gold);
+    background: #004935 !important;
+    color: #ffffff !important;
+    border-color: #004935;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(42, 122, 42, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 73, 53, 0.25);
   }
 
   .btn-gold:active {
@@ -407,7 +407,7 @@
 
   .form-input:focus {
     border-color: var(--color-gold);
-    box-shadow: 0 0 0 3px rgba(42, 122, 42, 0.12);
+    box-shadow: 0 0 0 3px rgba(0, 73, 53, 0.12);
   }
 
   .form-input::placeholder {
@@ -581,9 +581,9 @@
 }
 
 .lead-form-input:focus {
-  border-color: #2A7A2A;
+  border-color: #004935;
   background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(42, 122, 42, 0.16);
+  box-shadow: 0 0 0 3px rgba(0, 73, 53, 0.16);
 }
 
 .lead-form-input::placeholder {
@@ -593,30 +593,46 @@
 
 /* Hero Section Dark Inputs */
 .hero-section .lead-form-input {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 30, 22, 0.6);
+  border: 1.5px solid rgba(152, 236, 161, 0.25);
   color: #ffffff;
 }
 
 .hero-section .lead-form-input::placeholder {
-  color: #94a3b8;
+  color: #a7f3d0;
+  opacity: 0.6;
 }
 
 .hero-section .lead-form-input:focus {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: #4DADE2;
-  box-shadow: 0 0 0 3px rgba(42, 122, 42, 0.35);
+  background: rgba(0, 35, 25, 0.9);
+  border-color: #98ECA1;
+  box-shadow: 0 0 0 3px rgba(152, 236, 161, 0.35);
+}
+
+.hero-section .lead-form-btn {
+  background: #98ECA1 !important;
+  color: #003829 !important;
+  border: 2px solid #98ECA1 !important;
+  font-weight: 800;
+  box-shadow: 0 4px 16px rgba(152, 236, 161, 0.35);
+}
+
+.hero-section .lead-form-btn:hover {
+  background: #ffffff !important;
+  color: #003829 !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.45);
 }
 
 .lead-form-btn {
   width: 100%;
   padding: 14px 24px;
-  background: #2A7A2A;
-  color: #ffffff;
-  border: 2px solid #2A7A2A;
+  background: #98ECA1;
+  color: #003829;
+  border: 2px solid #98ECA1;
   border-radius: 8px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   font-family: var(--font-poppins), 'Poppins', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -624,10 +640,10 @@
 }
 
 .lead-form-btn:hover {
-  background: #ffffff !important;
-  color: #2A7A2A !important;
-  border-color: #2A7A2A;
-  box-shadow: 0 8px 25px rgba(42, 122, 42, 0.35);
+  background: #004935 !important;
+  color: #ffffff !important;
+  border-color: #004935;
+  box-shadow: 0 8px 25px rgba(0, 73, 53, 0.35);
   transform: translateY(-1px);
 }
 
@@ -639,8 +655,8 @@
 
 /* Hero buttons hover */
 .btn-blue:hover {
-  background: linear-gradient(135deg, #1E5C1E, #003da5) !important;
-  box-shadow: 0 12px 30px rgba(42, 122, 42, 0.4);
+  background: linear-gradient(135deg, #003627, #003da5) !important;
+  box-shadow: 0 12px 30px rgba(0, 73, 53, 0.4);
 }
 
 .btn-white:hover {

@@ -23,7 +23,7 @@ const Pricing = ({ setIsOpen }) => {
         
         {/* Section Header */}
         <div className="text-center max-w-5xl mx-auto mb-10" data-aos="fade-up">
-          <span className="text-[#2A7A2A] font-bold text-[13px] sm:text-[14px] tracking-[2px] uppercase mb-2.5 block">
+          <span className="text-[#004935] font-bold text-[13px] sm:text-[14px] tracking-[2px] uppercase mb-2.5 block">
             PRICE LIST
           </span>
           <h2 className="text-[#111111] text-[22px] sm:text-[26px] md:text-[30px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
@@ -38,8 +38,8 @@ const Pricing = ({ setIsOpen }) => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={(index * 100).toString()}
-              className="bg-white rounded-[20px] p-6 sm:p-7 border border-[#EAF5EA] shadow-[0_8px_30px_rgba(175, 117, 28,0.06)] relative overflow-hidden flex flex-col justify-between"
-              style={{ borderTop: '4px solid #2A7A2A' }}
+              className="bg-white rounded-[20px] p-6 sm:p-7 border border-[#EAF7EE] shadow-[0_8px_30px_rgba(175, 117, 28,0.06)] relative overflow-hidden flex flex-col justify-between"
+              style={{ borderTop: '4px solid #004935' }}
             >
               <div>
                 {/* Top Header: Unit Type & Area Tag */}
@@ -47,7 +47,7 @@ const Pricing = ({ setIsOpen }) => {
                   <h3 className="text-[#1a1a1a] font-black text-[18px] sm:text-[20px] m-0">
                     {item.type}
                   </h3>
-                  <span className="bg-[#EAF5EA] text-[#2A7A2A] text-[12.5px] sm:text-[13.5px] font-extrabold px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
+                  <span className="bg-[#EAF7EE] text-[#004935] text-[12.5px] sm:text-[13.5px] font-extrabold px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
                     {item.area} Sq.Ft.
                   </span>
                 </div>
@@ -75,19 +75,21 @@ const Pricing = ({ setIsOpen }) => {
 
               <button
                 onClick={() => setIsOpen(true)}
-                className="w-full py-3.5 rounded-[50px] font-bold text-[15px] transition-all duration-300 shadow-[0_6px_20px_rgba(175, 117, 28,0.35)] active:scale-[0.98] cursor-pointer"
+                className="w-full py-3.5 rounded-[50px] font-extrabold text-[15px] transition-all duration-300 shadow-md active:scale-[0.98] cursor-pointer"
                 style={{
-                  background: '#2A7A2A',
-                  color: '#ffffff',
-                  border: '2px solid #2A7A2A',
+                  background: '#98ECA1',
+                  color: '#003829',
+                  border: '2px solid #98ECA1',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.background = '#ffffff';
-                  e.currentTarget.style.color = '#2A7A2A';
+                  e.currentTarget.style.background = '#004935';
+                  e.currentTarget.style.color = '#ffffff';
+                  e.currentTarget.style.borderColor = '#004935';
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.background = '#2A7A2A';
-                  e.currentTarget.style.color = '#ffffff';
+                  e.currentTarget.style.background = '#98ECA1';
+                  e.currentTarget.style.color = '#003829';
+                  e.currentTarget.style.borderColor = '#98ECA1';
                 }}
               >
                 Get Full Price Sheet
@@ -116,23 +118,23 @@ const Pricing = ({ setIsOpen }) => {
                   <td className="py-5 px-4 lg:px-6 text-center whitespace-nowrap">
                     <button 
                       onClick={() => setIsOpen(true)}
-                      className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] font-bold text-[13.5px] transition-all duration-300 shadow-[0_4px_14px_rgba(175, 117, 28,0.3)] cursor-pointer"
+                      className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] font-extrabold text-[13.5px] transition-all duration-300 shadow-md cursor-pointer"
                       style={{
-                        background: '#2A7A2A',
-                        color: '#ffffff',
-                        border: '2px solid #2A7A2A',
+                        background: '#98ECA1',
+                        color: '#003829',
+                        border: '2px solid #98ECA1',
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.background = '#ffffff';
-                        e.currentTarget.style.color = '#2A7A2A';
+                        e.currentTarget.style.background = '#004935';
+                        e.currentTarget.style.color = '#ffffff';
+                        e.currentTarget.style.borderColor = '#004935';
                         e.currentTarget.style.transform = 'translateY(-2px)';
-                        e.currentTarget.style.boxShadow = '0 8px 24px rgba(175, 117, 28,0.45)';
                       }}
                       onMouseLeave={e => {
-                        e.currentTarget.style.background = '#2A7A2A';
-                        e.currentTarget.style.color = '#ffffff';
+                        e.currentTarget.style.background = '#98ECA1';
+                        e.currentTarget.style.color = '#003829';
+                        e.currentTarget.style.borderColor = '#98ECA1';
                         e.currentTarget.style.transform = 'none';
-                        e.currentTarget.style.boxShadow = '0 4px 14px rgba(175, 117, 28,0.3)';
                       }}
                     >
                       Get Full Price Sheet

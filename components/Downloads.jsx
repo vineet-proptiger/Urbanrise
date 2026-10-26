@@ -112,7 +112,7 @@ const DownloadCard = ({ doc, setIsOpen }) => {
         {/* Gold underline */}
         <div style={{
           width: '40px', height: '2px',
-          background: '#2A7A2A',
+          background: '#004935',
           margin: '0 auto',
           borderRadius: '1px',
         }} />
@@ -123,15 +123,15 @@ const DownloadCard = ({ doc, setIsOpen }) => {
         onClick={() => setIsOpen(true)}
         style={{
           display: 'block', width: '100%',
-          background: '#2A7A2A', color: '#fff', border: 'none',
+          background: '#98ECA1', color: '#003829', border: 'none',
           padding: '15px 0',
-          fontFamily: F_JOST, fontWeight: '700', fontSize: '13px',
+          fontFamily: F_JOST, fontWeight: '800', fontSize: '13px',
           letterSpacing: '0.12em', textTransform: 'uppercase',
           cursor: 'pointer', transition: 'background 0.2s',
           flexShrink: 0,
         }}
-        onMouseEnter={e => (e.currentTarget.style.background = '#9A7518')}
-        onMouseLeave={e => (e.currentTarget.style.background = '#2A7A2A')}
+        onMouseEnter={e => (e.currentTarget.style.background = '#004935', e.currentTarget.style.color = '#ffffff')}
+        onMouseLeave={e => (e.currentTarget.style.background = '#98ECA1', e.currentTarget.style.color = '#003829')}
       >
         DOWNLOAD
       </button>
