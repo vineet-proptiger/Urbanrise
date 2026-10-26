@@ -185,8 +185,8 @@ const Hero = ({ setIsOpen }) => {
                   <strong className="text-white font-black text-[13px] sm:text-[15px] whitespace-nowrap">3 &amp; 4 BHK</strong>
                 </div>
                 <div className="border-l border-white/15 pl-2 sm:pl-4 lg:pl-5 flex-shrink-0">
-                  <span className="text-neutral-300 font-bold text-[10px] sm:text-[11px] uppercase tracking-wider block mb-0.5">Possession</span>
-                  <strong className="text-[#98ECA1] font-black text-[13px] sm:text-[15px] whitespace-nowrap">Coming Soon</strong>
+                  <span className="text-neutral-300 font-bold text-[10px] sm:text-[11px] uppercase tracking-wider block mb-0.5">Status</span>
+                  <strong className="text-[#98ECA1] font-black text-[13px] sm:text-[15px] whitespace-nowrap">Pre Launch</strong>
                 </div>
               </div>
 
@@ -203,10 +203,10 @@ const Hero = ({ setIsOpen }) => {
                 {/* Header */}
                 <div className="text-center mb-4 sm:mb-5">
                   <h3 className="text-lg xs:text-xl sm:text-2xl font-black text-white tracking-tight m-0">
-                    Get Instant Cost Sheet &amp; Plans
+                    Unlock Exclusive Pre-Launch Benefits
                   </h3>
-                  <p className="text-[11px] sm:text-xs text-neutral-300 mt-1 font-normal">
-                    Delivered on WhatsApp &amp; Email in 60s
+                  <p className="text-[11px] sm:text-xs text-neutral-300 mt-1 font-normal leading-relaxed">
+                    Register your interest today for priority access, project updates, and exclusive offers.
                   </p>
                 </div>
 
@@ -237,8 +237,8 @@ const Hero = ({ setIsOpen }) => {
                       onClick={() => setIsOpen && setIsOpen(true)}
                       className="py-2.5 px-1 sm:px-2 rounded-xl text-[11px] min-[360px]:text-[11.5px] min-[400px]:text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer overflow-hidden"
                     >
-                      <i className="fas fa-file-arrow-down text-[10px] min-[360px]:text-[11px] shrink-0"></i>
-                      <span className="truncate">Brochure</span>
+                      <i className="fas fa-file-invoice-dollar text-[10px] min-[360px]:text-[11px] shrink-0"></i>
+                      <span className="truncate">Cost Sheet</span>
                     </button>
                   </div>
 

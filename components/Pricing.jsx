@@ -49,9 +49,9 @@ const Pricing = ({ setIsOpen }) => {
                   </h3>
                 </div>
 
-                {/* Specs: Build-up Area */}
+                {/* Specs: Super Built-up Area */}
                 <div className="mb-4 bg-[#f8fafc] px-3.5 py-2.5 rounded-xl border border-gray-100 flex flex-col min-[340px]:flex-row min-[340px]:items-center justify-between gap-1">
-                  <span className="text-gray-500 text-[11.5px] sm:text-xs font-bold uppercase tracking-wider">Build-up Area</span>
+                  <span className="text-gray-500 text-[11.5px] sm:text-xs font-bold uppercase tracking-wider">Super Built-up Area</span>
                   <strong className="text-gray-900 text-[13.5px] sm:text-[14px] font-extrabold">{item.area} Sq.Ft.</strong>
                 </div>
 
@@ -97,7 +97,7 @@ const Pricing = ({ setIsOpen }) => {
             <thead>
               <tr className="bg-[#1a1a1a] text-white">
                 <th className="py-4 px-4 lg:px-6 font-bold text-[13px] tracking-wider uppercase border-b-0 text-left whitespace-nowrap">Title</th>
-                <th className="py-4 px-4 lg:px-6 font-bold text-[13px] tracking-wider uppercase border-b-0 text-center whitespace-nowrap">Build-up Area</th>
+                <th className="py-4 px-4 lg:px-6 font-bold text-[13px] tracking-wider uppercase border-b-0 text-center whitespace-nowrap">Super Built-up Area</th>
                 <th className="py-4 px-4 lg:px-6 font-bold text-[13px] tracking-wider uppercase border-b-0 text-center whitespace-nowrap">Price</th>
                 <th className="py-4 px-4 lg:px-6 font-bold text-[13px] tracking-wider uppercase border-b-0 text-center whitespace-nowrap">Action</th>
               </tr>
