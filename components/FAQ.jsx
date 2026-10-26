@@ -21,7 +21,7 @@ const faqData = [
   {
     question: 'How large is the project and what is the development structure?',
     answer:
-      'Urbanrise The Living Wave spans ~4.20 acres in Gattahalli, comprising 3 towers with two basements, ground, and 9/11 upper floors, featuring approximately 368 residences.',
+      'Urbanrise The Living Wave spans ~4.20 acres in Gattahalli, comprising 3 towers with 368 homes and a dedicated low-rise amenity clubhouse.',
   },
   {
     question: 'Where exactly is Urbanrise The Living Wave located?',

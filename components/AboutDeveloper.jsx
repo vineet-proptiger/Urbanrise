@@ -184,7 +184,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <p className='text-justify' style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
-              Urbanrise, an Alliance Group company, brings over 25 years of excellence in building thriving residential communities. With more than 24,000 happy families, 81 million sq.ft under planning and development, and a ₹63,000 Cr real estate portfolio across South India, Urbanrise is dedicated to crafting visionary Environmentally Intelligent (EI+) homes with unparalleled design, sustainability, and quality standards.
+              Urbanrise is a leading residential developer in South India and a brand of the Alliance Group, headquartered in Chennai with a corporate base in Bengaluru. Led by Chairman and Managing Director Manoj Namburu, it builds affordable-luxury gated communities and sustainable townships across Chennai, Hyderabad and Bengaluru. Urbanrise has delivered over 22,000 homes and has about 72 million sq. ft. of residential projects under development. Its homes are designed for a 100-year life using proprietary Environmental Intelligence (EI) technology for long-term resilience.
             </p>
 
             {/* Stats */}

@@ -9,10 +9,10 @@ module.exports = {
     extend: {
       colors: {
         gold: {
-          DEFAULT: 'var(--color-gold)',       /* #433E6C */
-          light: 'var(--color-gold-light)', /* #5a5590 */
-          dark: 'var(--color-gold-dark)',  /* #332f54 */
-          bg: 'var(--color-gold-bg)',    /* #eeedf4 */
+          DEFAULT: 'var(--color-gold)',       /* #004935 */
+          light: 'var(--color-gold-light)', /* #005C43 */
+          dark: 'var(--color-gold-dark)',  /* #003627 */
+          bg: 'var(--color-gold-bg)',    /* #EAF7EE */
         },
         teal: {
           DEFAULT: '#3A96CC',
@@ -48,10 +48,10 @@ module.exports = {
         poppins: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
       },
       boxShadow: {
-        'brand-sm': '0 2px 8px rgba(67,62,108,0.08)',
-        'brand-md': '0 8px 24px rgba(67,62,108,0.14)',
-        'brand-lg': '0 20px 48px rgba(67,62,108,0.18)',
-        'card': '0 4px 20px rgba(0,0,0,0.07)',
+        'brand-sm': '0 2px 8px rgba(0, 73, 53, 0.08)',
+        'brand-md': '0 8px 24px rgba(0, 73, 53, 0.14)',
+        'brand-lg': '0 20px 48px rgba(0, 73, 53, 0.18)',
+        'card': '0 4px 20px rgba(0, 0, 0, 0.07)',
       },
       keyframes: {
         priceBtn: {
@@ -68,8 +68,8 @@ module.exports = {
           to: { opacity: '1', transform: 'translateY(0)' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 0 0   rgba(67,62,108,0.45)' },
-          '50%': { boxShadow: '0 0 0 12px rgba(67,62,108,0)' },
+          '0%, 100%': { boxShadow: '0 0 0 0   rgba(0, 73, 53, 0.45)' },
+          '50%': { boxShadow: '0 0 0 12px rgba(0, 73, 53, 0)' },
         },
         shimmer: {
           '0%': { backgroundPosition: '-200% center' },

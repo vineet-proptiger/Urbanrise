@@ -217,7 +217,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <div style={{ textAlign: 'center', padding: '28px 0' }}>
             <div style={{
               width: '64px', height: '64px', borderRadius: '50%',
-              background: 'rgba(175, 117, 28, 0.1)', border: '2px solid #004935',
+              background: '#EAF7EE', border: '2px solid #004935',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               margin: '0 auto 16px',
             }}>
@@ -241,7 +241,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="fullname" required value={form.fullname} onChange={handle}
                 placeholder="Enter your name"
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(175, 117, 28, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 73, 53, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
@@ -252,7 +252,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="email" type="email" value={form.email} onChange={handle}
                 placeholder="Enter your email (Optional)"
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(175, 117, 28, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 73, 53, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
@@ -263,7 +263,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="phone" required value={form.phone} onChange={handle}
                 placeholder="Enter your phone number" maxLength={10}
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(175, 117, 28, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#004935'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 73, 53, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>

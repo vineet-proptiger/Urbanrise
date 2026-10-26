@@ -46,7 +46,7 @@ const PaymentPlan = ({ setIsOpen }) => {
         <div
           className="bg-white rounded-[24px] sm:rounded-[28px] p-2 sm:p-3"
           style={{
-            boxShadow: '0 20px 50px rgba(175, 117, 28, 0.08)',
+            boxShadow: '0 20px 50px rgba(0, 73, 53, 0.08)',
             border: '1px solid rgba(0, 73, 53, 0.12)',
           }}
           data-aos="fade-up"
@@ -67,7 +67,7 @@ const PaymentPlan = ({ setIsOpen }) => {
                   }`}
                   style={{
                     background: isActive ? '#003627' : 'transparent',
-                    boxShadow: isActive ? '0 12px 30px rgba(21, 53, 105, 0.35)' : 'none',
+                    boxShadow: isActive ? '0 12px 30px rgba(0, 73, 53, 0.35)' : 'none',
                   }}
                 >
                   {/* Vertical Divider for desktop (only when neither current nor previous is active) */}

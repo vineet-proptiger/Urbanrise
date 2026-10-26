@@ -46,7 +46,7 @@
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
   --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.16);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
-  --color-shadow-inner: rgba(213, 92, 44, 0.15);
+  --color-shadow-inner: rgba(0, 73, 53, 0.15);
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────── */
@@ -655,7 +655,7 @@
 
 /* Hero buttons hover */
 .btn-blue:hover {
-  background: linear-gradient(135deg, #003627, #003da5) !important;
+  background: linear-gradient(135deg, #003627, #3A96CC) !important;
   box-shadow: 0 12px 30px rgba(0, 73, 53, 0.4);
 }
 

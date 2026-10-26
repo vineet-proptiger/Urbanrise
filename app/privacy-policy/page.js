@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
       <section
         className="relative flex items-center justify-center text-center min-h-[140px] sm:min-h-[200px]"
         style={{
-          backgroundImage: 'url(/images/hero/banner.webp)',
+          backgroundImage: 'url(/images/hero/banner1.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

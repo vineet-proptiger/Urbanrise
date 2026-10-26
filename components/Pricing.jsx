@@ -38,7 +38,7 @@ const Pricing = ({ setIsOpen }) => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={(index * 100).toString()}
-              className="bg-white rounded-[20px] p-6 sm:p-7 border border-[#EAF7EE] shadow-[0_8px_30px_rgba(175, 117, 28,0.06)] relative overflow-hidden flex flex-col justify-between"
+              className="bg-white rounded-[20px] p-6 sm:p-7 border border-[#EAF7EE] shadow-[0_8px_30px_rgba(0,73,53,0.06)] relative overflow-hidden flex flex-col justify-between"
               style={{ borderTop: '4px solid #004935' }}
             >
               <div>
