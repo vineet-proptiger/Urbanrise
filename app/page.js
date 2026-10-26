@@ -6,14 +6,17 @@ import { PROJECT_NAME, PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Overview from '../components/Overview'
-import Highlights from '../components/Highlights'
-import Gallery from '../components/Gallery'
-import Pricing from '../components/Pricing'
-import Amenities from '../components/Amenities'
-import Location from '../components/Location'
-import MasterPlan from '../components/MasterPlan'
-import AboutDeveloper from '../components/AboutDeveloper'
-import Footer from '../components/Footer'
+import LazySection from '../components/LazySection'
+
+// Dynamically split below-the-fold components
+const Highlights = dynamic(() => import('../components/Highlights'), { ssr: false })
+const Gallery = dynamic(() => import('../components/Gallery'), { ssr: false })
+const Pricing = dynamic(() => import('../components/Pricing'), { ssr: false })
+const Amenities = dynamic(() => import('../components/Amenities'), { ssr: false })
+const Location = dynamic(() => import('../components/Location'), { ssr: false })
+const MasterPlan = dynamic(() => import('../components/MasterPlan'), { ssr: false })
+const AboutDeveloper = dynamic(() => import('../components/AboutDeveloper'), { ssr: false })
+const Footer = dynamic(() => import('../components/Footer'), { ssr: false })
 
 // Dynamic components for client-only / on-demand widgets
 const EnquireModal = dynamic(() => import('../components/EnquireModal'), { ssr: false })
@@ -37,28 +40,44 @@ export default function Home() {
       <Overview setIsOpen={setIsOpen} />
 
       {/* ── Section 3: Highlights ── */}
-      <Highlights setIsOpen={setIsOpen} />
+      <LazySection id="highlights" minHeight="450px">
+        <Highlights setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 4: Gallery ── */}
-      <Gallery setIsOpen={setIsOpen} />
+      <LazySection id="gallery" minHeight="550px">
+        <Gallery setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 5: Price List ── */}
-      <Pricing setIsOpen={setIsOpen} />
+      <LazySection id="pricing" minHeight="450px">
+        <Pricing setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 6: Amenities ── */}
-      <Amenities setIsOpen={setIsOpen} />
+      <LazySection id="amenities" minHeight="480px">
+        <Amenities setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 7: Location & Map ── */}
-      <Location />
+      <LazySection id="location" minHeight="500px">
+        <Location />
+      </LazySection>
 
       {/* ── Section 8: Master & Floor Plan ── */}
-      <MasterPlan setIsOpen={setIsOpen} />
+      <LazySection id="masterplan" minHeight="550px">
+        <MasterPlan setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 9: About Developer ── */}
-      <AboutDeveloper setIsOpen={setIsOpen} />
+      <LazySection id="developer" minHeight="400px">
+        <AboutDeveloper setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Section 10: Footer ── */}
-      <Footer setIsOpen={setIsOpen} />
+      <LazySection minHeight="300px">
+        <Footer setIsOpen={setIsOpen} />
+      </LazySection>
 
       {/* ── Enquire Modal (Only mounted when triggered or pre-fetched on hover) ── */}
       {isOpen && <EnquireModal isOpen={isOpen} setIsOpen={setIsOpen} />}
