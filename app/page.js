@@ -127,7 +127,7 @@ export default function Home() {
           <span className="text-[11px] sm:text-[12px] font-extrabold text-[#003829] mt-1 leading-none">ENQUIRE</span>
         </button>
         <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(PROJECT_NAME)}%20Price%20and%20Floor%20Plans`}
+          href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(PROJECT_NAME)}`}
           target="_blank" rel="noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
           style={{ background: '#25D366' }}
