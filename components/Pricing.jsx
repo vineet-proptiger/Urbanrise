@@ -42,20 +42,17 @@ const Pricing = ({ setIsOpen }) => {
               style={{ borderTop: '4px solid #004935' }}
             >
               <div>
-                {/* Top Header: Unit Type & Area Tag */}
-                <div className="flex items-center justify-between gap-2 pb-4 border-b border-[#f1f5f9] mb-4">
+                {/* Top Header: Unit Type */}
+                <div className="pb-4 border-b border-[#f1f5f9] mb-4">
                   <h3 className="text-[#1a1a1a] font-black text-[18px] sm:text-[20px] m-0">
                     {item.type}
                   </h3>
-                  <span className="bg-[#EAF7EE] text-[#004935] text-[12.5px] sm:text-[13.5px] font-extrabold px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
-                    {item.area} Sq.Ft.
-                  </span>
                 </div>
 
                 {/* Specs: Build-up Area */}
-                <div className="mb-3 bg-[#f8fafc] p-2.5 rounded-xl border border-gray-100 text-xs">
-                  <span className="text-gray-400 block font-semibold uppercase">Build-up Area</span>
-                  <strong className="text-gray-800 text-[13px]">{item.area} Sq.Ft.</strong>
+                <div className="mb-4 bg-[#f8fafc] px-3.5 py-2.5 rounded-xl border border-gray-100 flex flex-col min-[340px]:flex-row min-[340px]:items-center justify-between gap-1">
+                  <span className="text-gray-500 text-[11.5px] sm:text-xs font-bold uppercase tracking-wider">Build-up Area</span>
+                  <strong className="text-gray-900 text-[13.5px] sm:text-[14px] font-extrabold">{item.area} Sq.Ft.</strong>
                 </div>
 
                 {/* Estimated Price Block */}
@@ -67,10 +64,6 @@ const Pricing = ({ setIsOpen }) => {
                     {item.price}
                   </div>
                 </div>
-                {/* Description */}
-                {item.desc && (
-                  <p className="text-[#6c757d] text-[13px] font-medium mb-4 leading-snug">{item.desc}</p>
-                )}
               </div>
 
               <button
