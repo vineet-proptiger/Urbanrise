@@ -215,30 +215,30 @@ const Hero = ({ setIsOpen }) => {
 
                 {/* ── 3 CTA BUTTONS BAR ── */}
                 <div className="mt-3.5 pt-3.5 border-t border-white/10">
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
                     <button
                       type="button"
                       onClick={() => setIsOpen && setIsOpen(true)}
-                      className="py-2.5 px-1.5 rounded-xl text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
+                      className="py-2.5 px-1 sm:px-2 rounded-xl text-[11px] min-[360px]:text-[11.5px] min-[400px]:text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer overflow-hidden"
                     >
-                      <i className="fas fa-paper-plane text-[10px]"></i>
-                      <span>Enquire Now</span>
+                      <i className="fas fa-paper-plane text-[9px] min-[360px]:text-[10px] shrink-0"></i>
+                      <span className="truncate">Enquire<span className="hidden min-[380px]:inline"> Now</span></span>
                     </button>
                     <button
                       type="button"
                       onClick={() => setIsOpen && setIsOpen(true)}
-                      className="py-2.5 px-1.5 rounded-xl text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
+                      className="py-2.5 px-1 sm:px-2 rounded-xl text-[11px] min-[360px]:text-[11.5px] min-[400px]:text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer overflow-hidden"
                     >
-                      <i className="fas fa-calendar-check text-[11px]"></i>
-                      <span>Schedule Visit</span>
+                      <i className="fas fa-calendar-check text-[10px] min-[360px]:text-[11px] shrink-0"></i>
+                      <span className="truncate"><span className="hidden min-[410px]:inline">Schedule </span>Visit</span>
                     </button>
                     <button
                       type="button"
                       onClick={() => setIsOpen && setIsOpen(true)}
-                      className="py-2.5 px-1.5 rounded-xl text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap"
+                      className="py-2.5 px-1 sm:px-2 rounded-xl text-[11px] min-[360px]:text-[11.5px] min-[400px]:text-xs sm:text-[13px] font-bold text-center bg-[#98ECA1] text-[#003829] border border-[#98ECA1] hover:bg-white hover:text-[#003829] shadow-md hover:shadow-[0_8px_20px_rgba(152,236,161,0.4)] hover:-translate-y-0.5 active:scale-95 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer overflow-hidden"
                     >
-                      <i className="fas fa-file-arrow-down text-[11px]"></i>
-                      <span>Brochure</span>
+                      <i className="fas fa-file-arrow-down text-[10px] min-[360px]:text-[11px] shrink-0"></i>
+                      <span className="truncate">Brochure</span>
                     </button>
                   </div>
 
